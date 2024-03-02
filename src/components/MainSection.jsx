@@ -3,6 +3,7 @@ import LastUpdated from "./LastUpdated";
 import Tabs from "./Tabs";
 import Routing from "./Routing";
 import Cards from "./Cards";
+import RelatedDeals from "./RelatedDeals";
 
 const MainSection = () => {
   return (
@@ -14,6 +15,7 @@ const MainSection = () => {
       <Tabs />
       <Routing />
       <Cards />
+      <RelatedDeals />
     </div>
   );
 };

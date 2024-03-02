@@ -18,7 +18,7 @@ const CardItem = ({
   off,
 }) => {
   return (
-    <section className="relative p-5 bg-white rounded-lg text-[#626E79] text-sm flex justify-between cursor-default">
+    <section className="relative p-5 bg-white rounded-xl text-[#626E79] text-sm flex justify-between cursor-default">
       <div className="flex flex-col text-center gap-4 my-auto">
         {bestIn && (
           <div className="flex gap-2 bg-[#FF7724] text-white absolute top-[-15px] left-[-7px] px-2 py-1 text-base rounded-e-md">
@@ -91,11 +91,13 @@ const CardItem = ({
         <div className="bg-[#F3F9FF] font-bold p-5 px-10 text-center self-center w-auto mt-[-10%] rounded-b-lg">
           <div className="text-[32px] flex">
             <h2>{rating}</h2>
-            <img
-              src={Information}
-              alt="information icon"
-              className="mt-[-45px] cursor-pointer"
-            />
+            {rating > 9.3 && (
+              <img
+                src={Information}
+                alt="information icon"
+                className="mt-[-45px] cursor-pointer"
+              />
+            )}
           </div>
           <p className="text-sm font-normal mt-5">
             {rating > 9.6
