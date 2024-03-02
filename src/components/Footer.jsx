@@ -6,7 +6,7 @@ import DownArrow from "../utils/DownArrow.svg";
 
 const Footer = () => {
   return (
-    <div className="bg-[#212731] grid grid-cols-3 gap-16 xs:gap-0 xs:text-center p-5  xs:grid-cols-2 [@media(max-width:440px)]:grid-cols-1">
+    <div className="bg-[#212731] grid grid-cols-3 xs:gap-0 xs:text-center p-5  xs:grid-cols-2 [@media(max-width:440px)]:grid-cols-1">
       {footerLinks.map((link) => (
         <Links key={link.id} {...link} />
       ))}
