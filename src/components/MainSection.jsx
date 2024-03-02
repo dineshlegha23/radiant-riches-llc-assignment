@@ -7,7 +7,7 @@ import RelatedDeals from "./RelatedDeals";
 
 const MainSection = () => {
   return (
-    <div className="mx-auto max-w-[1024px] px-5">
+    <div className="mx-auto max-w-[1024px] px-7">
       <h1 className="text-5xl mt-10 text-[#2C384A]">
         Best Website builders in the US
       </h1>

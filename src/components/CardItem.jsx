@@ -94,7 +94,7 @@ const CardItem = ({
         </div>
       </div>
       <div className="flex justify-between flex-col sm:flex-row">
-        <div className="bg-[#F3F9FF] font-bold p-5 px-10 sm:p-2 sm:px-2 sm:mt-0 [@media(max-width:330px)]:hidden sm:absolute sm:top-0 sm:right-0 text-center self-center w-auto mt-[-10%] rounded-b-lg">
+        <div className="bg-[#F3F9FF] font-bold p-5 px-10 md:mt-[-20px] sm:p-2 sm:px-2 sm:mt-0 [@media(max-width:330px)]:hidden sm:absolute sm:top-0 sm:right-0 text-center self-center w-auto mt-[-10%] rounded-b-lg">
           <div className="text-[32px] flex sm:mt-5">
             <h2 className="sm:mx-auto">{rating}</h2>
             {rating > 9.3 && (
