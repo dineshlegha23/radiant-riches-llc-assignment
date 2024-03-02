@@ -37,7 +37,7 @@ const Card = ({
           ({off}% off)
         </span>
       </div>
-      <button className="text-base font-normal text-white bg-[#1B88F4] rounded-lg py-1.5 hover:bg-blue-600 transition-all">
+      <button className="text-base font-normal text-white bg-[#1B88F4] rounded-lg py-1.5 hover:bg-blue-600 transition-all mb-5">
         View Deal
       </button>
     </div>
