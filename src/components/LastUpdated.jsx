@@ -4,7 +4,7 @@ import DownArrow from "../utils/DownArrow.svg";
 
 const LastUpdated = () => {
   return (
-    <div className="text-sm text-[#4B5665] flex justify-between py-3 border-[1.5px] border-opacity-50 border-y-gray-400 border-x-0 mt-5">
+    <div className="text-sm text-[#4B5665] flex flex-wrap justify-between py-3 border-[1.5px] border-opacity-50 border-y-gray-400 border-x-0 mt-5">
       <div className="flex gap-8">
         <div className="flex gap-2">
           <img src={Tick} alt="tick icon" />
@@ -16,7 +16,7 @@ const LastUpdated = () => {
           <p>Advertising Disclosure</p>
         </div>
       </div>
-      <div className="flex cursor-pointer hover:text-black/40">
+      <div className="flex cursor-pointer hover:text-black/40 pl-2  [@media(max-width:575px)]:mt-5">
         <p>Top Relevant</p>
         <img src={DownArrow} alt="arrow icon" className="w-5" />
       </div>

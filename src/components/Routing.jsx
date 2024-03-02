@@ -2,7 +2,7 @@ import React from "react";
 
 const Routing = () => {
   return (
-    <ul className="flex gap-4 mt-5 text-[#727D87] text-[13px]">
+    <ul className="flex flex-wrap gap-4 mt-5 text-[#727D87] text-[13px]">
       <li className="cursor-pointer">Home</li>
       <p className="cursor-default">&gt;</p>
       <li className="cursor-pointer">Hosting for all</li>

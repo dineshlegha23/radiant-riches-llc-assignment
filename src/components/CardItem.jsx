@@ -18,7 +18,7 @@ const CardItem = ({
   off,
 }) => {
   return (
-    <section className="relative p-5 bg-white rounded-xl text-[#626E79] text-sm flex justify-between cursor-default">
+    <section className="relative p-5 bg-white rounded-xl text-[#626E79] text-sm flex justify-between cursor-default sm:flex-col">
       <div className="flex flex-col text-center gap-4 my-auto">
         {bestIn && (
           <div className="flex gap-2 bg-[#FF7724] text-white absolute top-[-15px] left-[-7px] px-2 py-1 text-base rounded-e-md">
@@ -29,14 +29,18 @@ const CardItem = ({
             <p>Best {bestIn}</p>
           </div>
         )}
-        <p className="absolute top-[10%] left-[-2%] h-10 w-10 rounded-full bg-white p-2.5 border-[1px]">
+        <p className="absolute top-[10%] left-[-2%] md:left-[-3%] sm:left-[-4%] xs:left-[-6%] h-10 w-10 rounded-full bg-white p-2.5 border-[1px]">
           {id}
         </p>
-        <img className="min-w-32 max-w-32" src={image} alt={heading} />
+        <img
+          className="min-w-32 max-w-32 lg:pr-3 sm:mx-auto sm:min-w-[60%]"
+          src={image}
+          alt={heading}
+        />
         <p>{imageText}</p>
       </div>
 
-      <div className="text-base max-w-[475px]">
+      <div className="text-base max-w-[475px] sm:mt-5 sm:mb-10">
         <h3 className="font-bold">
           {heading}
           <span className="font-normal">{headingDesc}</span>
@@ -45,7 +49,7 @@ const CardItem = ({
               {off}% off
             </p>
           )}
-          <p className="text-black/80 mt-1">
+          <div className="text-black/80 mt-1">
             Main highlights
             <span className="block font-normal mt-2 ml-5 text-[#626E79]">
               {Array.isArray(mainHighlight) ? (
@@ -63,7 +67,7 @@ const CardItem = ({
                 mainHighlight
               )}
             </span>
-          </p>
+          </div>
         </h3>
         {whyWeLoveIt && (
           <div className="mt-5 mb-4">
@@ -87,10 +91,10 @@ const CardItem = ({
           />
         </div>
       </div>
-      <div className="flex justify-between flex-col">
-        <div className="bg-[#F3F9FF] font-bold p-5 px-10 text-center self-center w-auto mt-[-10%] rounded-b-lg">
-          <div className="text-[32px] flex">
-            <h2>{rating}</h2>
+      <div className="flex justify-between flex-col sm:flex-row">
+        <div className="bg-[#F3F9FF] font-bold p-5 px-10 sm:p-2 sm:px-2 sm:mt-0 [@media(max-width:330px)]:hidden sm:absolute sm:top-0 sm:right-0 text-center self-center w-auto mt-[-10%] rounded-b-lg">
+          <div className="text-[32px] flex sm:mt-5">
+            <h2 className="sm:mx-auto">{rating}</h2>
             {rating > 9.3 && (
               <img
                 src={Information}
@@ -108,7 +112,7 @@ const CardItem = ({
           </p>
           <p>Stars</p>
         </div>
-        <button className="bg-[#1B88F4] w-full text-white rounded-lg py-2 px-24 bottom-0 transition-all hover:bg-blue-600">
+        <button className="bg-[#1B88F4] w-full text-white rounded-lg py-2 px-24 sm:self-center md:px-12 bottom-0 transition-all hover:bg-blue-600">
           View
         </button>
       </div>

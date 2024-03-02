@@ -16,16 +16,16 @@ const MainSection = () => {
       <Routing />
       <Cards />
       <RelatedDeals />
-      <div className="flex justify-between mt-32 pl-10 mb-10">
-        <h3 className="text-[32px] text-[#5C6874] ">
+      <div className="flex justify-between mt-32 mb-10 pl-9 md:pl-2 sm:flex-col sm:text-center">
+        <h3 className="text-[32px] text-[#5C6874]">
           Sign up and get exclusive <span className="block">special deals</span>
         </h3>
-        <div className="self-center w-6/12">
+        <div className="self-center w-6/12 md:w-8/12 sm:w-6/7 sm:mt-5 xs:w-full xs:flex xs:flex-col">
           <input
             type="text"
-            className="w-9/12 p-4 pl-3 rounded-s-lg bg-white text-sm focus:outline-blue-400"
+            className="w-8/12 xs:w-full p-4 pl-3  rounded-s-lg bg-white text-sm focus:outline-blue-400"
           />
-          <button className="bg-[#1B88F4] p-4 text-white text-sm rounded-e-xl hover:bg-blue-600 transition-all">
+          <button className="bg-[#1B88F4] p-4 text-white text-sm rounded-e-xl hover:bg-blue-600 transition-all xs:mt-5 xs:rounded-lg">
             Sign Up
           </button>
         </div>

@@ -3,7 +3,7 @@ import { tabsData } from "../data";
 
 const Tabs = () => {
   return (
-    <div className="flex gap-5 mt-3">
+    <div className="flex gap-5 mt-3 flex-wrap">
       {tabsData.map((tab) => (
         <button
           key={tab.id}

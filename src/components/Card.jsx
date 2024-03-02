@@ -4,7 +4,6 @@ const Card = ({
   image,
   off,
   desc,
-  time,
   builder,
   discountedPrice,
   originalPrice,
@@ -14,7 +13,7 @@ const Card = ({
       <img
         src={image}
         alt=" computer image"
-        className="min-w-32 max-w-32 mx-auto my-8"
+        className="min-w-32 max-w-32 mx-auto my-8 [@media(max-width:520px)]:min-w-[60%]"
       />
       <div className="flex gap-2">
         <span className="bg-[#F2F4F7] pr-3 rounded-lg p-1 text-sm text-[#074786] px-2">
@@ -28,7 +27,7 @@ const Card = ({
         {builder}
       </h3>
       <p>{desc}</p>
-      <div className="flex gap-3 font-semibold">
+      <div className="flex gap-3 font-semibold flex-wrap">
         <span className="text-xl text-[#5C6874]">${discountedPrice}</span>
         <span className="self-end text-sm text-[#9FA9B3]">
           ${originalPrice}
