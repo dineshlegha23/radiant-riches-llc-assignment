@@ -4,6 +4,8 @@ import Trophy from "../utils/Trophy.svg";
 import Diamond from "../utils/Diamond.svg";
 import Information from "../utils/Information.svg";
 import FilledTick from "../utils/FilledTick.svg";
+import StarsHalf from "../utils/StarsHalf.svg";
+import StarsFull from "../utils/StarsFull.svg";
 
 const CardItem = ({
   id,
@@ -110,7 +112,11 @@ const CardItem = ({
               ? "Excellent"
               : "Very Good"}
           </p>
-          <p>Stars</p>
+          <img
+            src={`${rating > 9.3 ? `${StarsFull}` : `${StarsHalf}`}`}
+            alt="stars"
+            className="mt-2"
+          />
         </div>
         <button className="bg-[#1B88F4] w-full text-white rounded-lg py-2 px-24 sm:self-center md:px-12 bottom-0 transition-all hover:bg-blue-600">
           View
