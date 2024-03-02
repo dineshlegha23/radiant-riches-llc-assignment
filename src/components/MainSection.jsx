@@ -25,7 +25,7 @@ const MainSection = () => {
             type="text"
             className="w-9/12 p-4 pl-3 rounded-s-lg bg-white text-sm focus:outline-blue-400"
           />
-          <button className="bg-[#1B88F4] p-4 text-white text-sm rounded-e-xl">
+          <button className="bg-[#1B88F4] p-4 text-white text-sm rounded-e-xl hover:bg-blue-600 transition-all">
             Sign Up
           </button>
         </div>

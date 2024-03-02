@@ -16,7 +16,7 @@ const LastUpdated = () => {
           <p>Advertising Disclosure</p>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex cursor-pointer hover:text-black/40">
         <p>Top Relevant</p>
         <img src={DownArrow} alt="arrow icon" className="w-5" />
       </div>
