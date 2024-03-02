@@ -2,7 +2,7 @@ import React from "react";
 
 const Links = ({ title, links }) => {
   return (
-    <div className="flex flex-col gap-4 text-white mx-auto my-8 mb-10">
+    <div className="flex flex-col gap-4 text-white mx-auto my-8 mb-5">
       <h3 className="uppercase">{title}</h3>
       <ul className="flex flex-col gap-4 text-[13px] xs:text-base text-[#B6BDC4]">
         {links.map((link, index) => (

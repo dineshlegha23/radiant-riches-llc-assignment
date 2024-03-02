@@ -9,7 +9,7 @@ const Card = ({
   originalPrice,
 }) => {
   return (
-    <div className="flex flex-col gap-2 bg-white text-[#626E79] rounded-xl overflow-hidden mx-2 px-5 cursor-default">
+    <div className="flex flex-col gap-2 bg-white text-[#626E79] rounded-xl overflow-hidden m-3 px-5 cursor-default">
       <img
         src={image}
         alt=" computer image"
