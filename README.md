@@ -33,4 +33,4 @@ npm start
 
 The Application Runs on **localhost:5173**
 
-**ReactJS** : Refer to https://reactjs.org/ to understand the concepts of ReactJS
+**ReactJS** : Refer to https://react.dev/ to understand the concepts of ReactJS
