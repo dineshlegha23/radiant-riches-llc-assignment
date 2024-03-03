@@ -14,7 +14,7 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-5xl mx-auto flex gap-20 md:gap-7 justify-center xs:flex xs:flex-col xs:text-center">
-        <div className={`flex w-full relative ${isOpen ? "xs:mx-auto" : ""}`}>
+        <div className={`flex w-max relative ${isOpen ? "xs:mx-auto" : ""}`}>
           <img
             src={Search}
             alt="search icon"
