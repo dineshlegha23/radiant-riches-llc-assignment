@@ -7,7 +7,7 @@ const Tabs = () => {
       {tabsData.map((tab) => (
         <button
           key={tab.id}
-          className="bg-white p-1 rounded-lg text-[13px] pl-4 pr-10 text-[#4B5665]"
+          className="transition-all duration-200 hover:text-black/90 bg-white hover:bg-gray-200 p-1 rounded-lg text-[13px] pl-4 pr-10 text-[#4B5665]"
         >
           {tab.title}
         </button>
