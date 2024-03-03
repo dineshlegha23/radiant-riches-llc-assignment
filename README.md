@@ -4,7 +4,7 @@ Site is live at : https://radiant-riches-llc-assignment.netlify.app/
 
 # Description
 * This React application is built using [Vite](https://vitejs.dev)
-* Tailwind CSS is used for styling
+* [Tailwind CSS](https://tailwindcss.com) is used for styling
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
